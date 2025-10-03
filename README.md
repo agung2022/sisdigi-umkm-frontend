@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# SisDigi UMKM - Aplikasi Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Selamat datang di antarmuka pengguna **SisDigi UMKM**! Ini adalah aplikasi web berbasis React yang menyediakan platform bagi pelaku UMKM untuk membuat, mengedit, dan mempublikasikan website bisnis mereka hanya dengan menggunakan bahasa natural.
 
-## Available Scripts
+[![Tampilan Aplikasi]
+<img width="1919" height="903" alt="Screenshot 2025-10-04 000241" src="https://github.com/user-attachments/assets/ee0186af-eb01-4402-962e-81f84b17d9c8" />
 
-In the project directory, you can run:
+## ✨ Fitur Pengguna
 
-### `npm start`
+- **Antarmuka Percakapan:** Buat dan edit website dengan cara "berbicara" atau memberikan instruksi kepada AI.
+- **Login & Registrasi:** Sistem akun yang aman untuk menyimpan semua progres dan riwayat proyek Anda.
+- **Panel Riwayat Interaktif:** Lihat semua versi website yang pernah Anda buat, muat kembali versi lama, atau hapus yang tidak diperlukan.
+- **Upload Gambar Mudah:** Unggah logo dan foto produk Anda dengan mudah untuk digunakan langsung oleh AI.
+- **Live Preview:** Lihat perubahan pada website Anda secara *real-time* di panel pratinjau.
+- **Publikasi Sekali Klik:** Publikasikan website Anda ke internet dengan satu tombol, lengkap dengan opsi untuk menghapus publikasi.
+- **Desain Modern:** Antarmuka yang bersih, responsif, dan mudah digunakan, bahkan untuk pemula.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💻 Teknologi yang Digunakan
 
-### `npm test`
+- **Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Routing:** React Router DOM
+- **HTTP Client:** Axios
+- **Notifikasi:** React Hot Toast
+- **UI Components:** Headless UI (untuk modal)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Cara Menjalankan Secara Lokal
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/NAMA_USER_ANDA/sisdigi-umkm-frontend.git](https://github.com/NAMA_USER_ANDA/sisdigi-umkm-frontend.git)
+    cd sisdigi-umkm-frontend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3.  **Pastikan Backend Berjalan:**
+    Aplikasi ini membutuhkan server backend untuk berfungsi. Pastikan Anda sudah menjalankan [repository backend SisDigi UMKM](https://github.com/NAMA_USER_ANDA/sisdigi-umkm-backend) terlebih dahulu. Server backend harus berjalan di `http://localhost:3001`.
 
-### `npm run eject`
+4.  **Jalankan Aplikasi:**
+    ```bash
+    npm start
+    ```
+    Aplikasi akan terbuka secara otomatis di browser Anda pada alamat `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Proyek ini dikembangkan sebagai bagian dari AWS Online Hackathon 2025.*

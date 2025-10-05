@@ -23,7 +23,8 @@ export default function RegisterPage() {
 
         try {
             // sesuaikan field sesuai backend (misal name optional)
-            await axios.post('http://localhost:3001/api/auth/register', { 
+            const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3001";
+      await axios.post(`${API_URL}/api/auth/register`, { 
                 name, 
                 email, 
                 password 

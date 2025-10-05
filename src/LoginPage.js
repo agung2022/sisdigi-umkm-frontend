@@ -27,7 +27,7 @@ export default function LoginPage() {
         setIsLoading(true);
         try {
             const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
-            const response = await axios.post(`${API_URL}/api/auth/login`, { email, password });
+            const response = await axios.post('${API_URL}/api/auth/login', { email, password });
             localStorage.setItem('accessToken', response.data.accessToken);
             navigate('/generator');
         } catch (err) {

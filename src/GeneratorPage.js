@@ -115,8 +115,9 @@ export default function GeneratorPage() {
       navigate("/login");
       return null;
     }
+    const apiBaseUrl = process.env.REACT_APP_API_URL || '';
     return axios.create({
-      baseURL: 'http://localhost:3001',
+      baseURL: apiBaseUrl,
       headers: { Authorization: `Bearer ${token}` },
     });
   };

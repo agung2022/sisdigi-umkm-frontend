@@ -127,13 +127,14 @@ export default function GeneratorPage() {
     if (!api) return;
     try {
       const response = await api.get("/api/generations");
-      setHistory(response.data);
-      // Muat riwayat paling baru secara otomatis jika belum ada yang aktif
-      if (response.data.length > 0 && !activeHistoryId) {
-        await loadHistoryItem(response.data[0].id);
+      const historyData = Array.isArray(response.data) ? response.data : [];
+      setHistory(historyData);
+      if (historyData.length > 0 && !activeHistoryId) {
+        await loadHistoryItem(historyData[0].id);
       }
     } catch (error) {
       console.error("Gagal memuat riwayat:", error);
+      setHistory([]);
     }
   };
 
@@ -319,7 +320,7 @@ export default function GeneratorPage() {
     navigate("/login");
   };
 
-  const activeHistoryItem = history.find((item) => item.id === activeHistoryId);
+  const activeHistoryItem = Array.isArray(history) ? history.find((item) => item.id === activeHistoryId) : null;
   const displayVersionNumber = activeHistoryItem
     ? activeHistoryItem.version_number
     : null;

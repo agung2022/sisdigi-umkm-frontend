@@ -17,6 +17,10 @@ export default function LoginPage() {
     const loginPromise = axios.post(`${apiBaseUrl}/api/auth/login`, {
       email,
       password,
+    }, {
+      headers: {
+        'ngrok-skip-browser-warning': 'true'
+      }
     });
 
     toast.promise(loginPromise, {

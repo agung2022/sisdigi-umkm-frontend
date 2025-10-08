@@ -20,11 +20,11 @@ export default function RegisterPage() {
       email,
       password,
     }, {
-       {
       headers: {
-        'ngrok-skip-browser-warning': 'true'
-      }
-    });
+        'ngrok-skip-browser-warning': 'true',
+      },
+    }
+    );
 
     toast.promise(registerPromise, {
       loading: "Mendaftarkan akun...",

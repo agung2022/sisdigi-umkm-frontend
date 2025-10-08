@@ -19,6 +19,11 @@ export default function RegisterPage() {
       name,
       email,
       password,
+    }, {
+       {
+      headers: {
+        'ngrok-skip-browser-warning': 'true'
+      }
     });
 
     toast.promise(registerPromise, {

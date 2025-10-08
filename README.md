@@ -3,7 +3,16 @@
 Selamat datang di antarmuka pengguna **SisDigi UMKM**! Ini adalah aplikasi web berbasis React yang menyediakan platform bagi pelaku UMKM untuk membuat, mengedit, dan mempublikasikan website bisnis mereka hanya dengan menggunakan bahasa natural.
 
 [![Tampilan Aplikasi]
+Tampilan Fitur Utama
 <img width="1919" height="903" alt="Screenshot 2025-10-04 000241" src="https://github.com/user-attachments/assets/ee0186af-eb01-4402-962e-81f84b17d9c8" />
+
+Tampilan Login
+<img width="1919" height="901" alt="Screenshot 2025-10-03 235954" src="https://github.com/user-attachments/assets/27c7c383-5745-4d64-aac3-75e09288534b" />
+
+Tampilan Registrasi
+<img width="1910" height="899" alt="Screenshot 2025-10-04 000137" src="https://github.com/user-attachments/assets/6e8cd046-7604-4507-9150-78c45b10feca" />
+
+
 
 ## ✨ Fitur Pengguna
 

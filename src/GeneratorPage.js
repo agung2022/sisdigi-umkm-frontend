@@ -118,7 +118,10 @@ export default function GeneratorPage() {
     const apiBaseUrl = process.env.REACT_APP_API_URL || '';
     return axios.create({
       baseURL: apiBaseUrl,
-      headers: { Authorization: `Bearer ${token}` },
+      headers: { 
+        Authorization: `Bearer ${token}`,
+        'ngrok-skip-browser-warning': 'true'
+      },
     });
   };
 
